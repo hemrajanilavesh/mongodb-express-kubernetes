@@ -17,6 +17,10 @@
     kubectl apply -f mongo-configmap.yaml 
     kubectl apply -f mongo-express.yaml
 
+### give a URL to external service in minikube
+
+    minikube service mongo-express-service
+
 ### kubectl get commands
 
     kubectl get pod
@@ -31,7 +35,3 @@
     kubectl describe pod mongodb-deployment-xxxxxx
     kubectl describe service mongodb-service
     kubectl logs mongo-express-xxxxxx
-
-### give a URL to external service in minikube
-
-    minikube service mongo-express-service
